@@ -1,0 +1,252 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{39ABCB18-C20E-428C-9A69-8BA1BED36324}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="..\..\iorm\Packages\Delphi\iORM_Project_DesignTime.dproj">
+            <Dependencies>..\..\iorm\Packages\Delphi\iORM_Project.dproj</Dependencies>
+        </Projects>
+        <Projects Include="..\..\iorm\Packages\Delphi\iORM_Project.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Samples\PagingVcl\PagingVCL.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Samples\PagingFmx\PagingFMX.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Samples\Paging_MVVM\VCL\Paging_MVVM_VCL.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Samples\Paging_MVVM\FMX\Paging_MVVM_FMX.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\NewPizzaOrder\10\vcl\PizzaOrders_10_vcl.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\NewPizzaOrder\10\fmx\PizzaOrders_10_fmx.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\NewPizzaOrder\10\mvvm\vcl\PizzaOrders_10_mvvm_vcl.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\NewPizzaOrder\DMVC\server\dmvcServerTest.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\New_Samples\pizza order by classes\mvvm fmx project\PizzaOrderByClass_mvvm_fmx.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="PizzAmore_10_LessAttr_Class\vcl\PizzAmore_10_LessAttr_Class_vcl_desktop.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="PizzAmore_10_LessAttr_Class\fmx\PizzAmore_10_LessAttr_Class_fmx_tablet.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="PizzAmore_20_MoreAttr_Class\vcl\PizzAmore_20_MoreAttr_Class_vcl_desktop.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="PizzAmore_20_MoreAttr_Class\dmvc_server\PizzAmore_20_MoreAttr_Class_vcl_dmvc_server.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="PizzAmore_30_LessAttr_Intf\vcl\PizzAmore_30_LessAttr_Intf_vcl_desktop.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="PizzAmore_30_LessAttr_Intf\mvvm_vcl\PizzAmore_30_LessAttr_Intf_mvvm_vcl_desktop.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="PizzAmore_30_LessAttr_Intf\mvvm_fmx\PizzAmore_30_LessAttr_Intf_mvvm_fmx_mobile.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="PizzAmore_40_LessAttr_Intf_microviews\mvvm_fmx\PizzAmore_40_LessAttr_Intf_mvvm_fmx_mobile_microviews.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="iORM_Project_DesignTime" DependsOnTargets="iORM_Project">
+        <MSBuild Projects="..\..\iorm\Packages\Delphi\iORM_Project_DesignTime.dproj"/>
+    </Target>
+    <Target Name="iORM_Project_DesignTime:Clean" DependsOnTargets="iORM_Project:Clean">
+        <MSBuild Projects="..\..\iorm\Packages\Delphi\iORM_Project_DesignTime.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="iORM_Project_DesignTime:Make" DependsOnTargets="iORM_Project:Make">
+        <MSBuild Projects="..\..\iorm\Packages\Delphi\iORM_Project_DesignTime.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="iORM_Project">
+        <MSBuild Projects="..\..\iorm\Packages\Delphi\iORM_Project.dproj"/>
+    </Target>
+    <Target Name="iORM_Project:Clean">
+        <MSBuild Projects="..\..\iorm\Packages\Delphi\iORM_Project.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="iORM_Project:Make">
+        <MSBuild Projects="..\..\iorm\Packages\Delphi\iORM_Project.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="PagingVCL">
+        <MSBuild Projects="..\Samples\PagingVcl\PagingVCL.dproj"/>
+    </Target>
+    <Target Name="PagingVCL:Clean">
+        <MSBuild Projects="..\Samples\PagingVcl\PagingVCL.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="PagingVCL:Make">
+        <MSBuild Projects="..\Samples\PagingVcl\PagingVCL.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="PagingFMX">
+        <MSBuild Projects="..\Samples\PagingFmx\PagingFMX.dproj"/>
+    </Target>
+    <Target Name="PagingFMX:Clean">
+        <MSBuild Projects="..\Samples\PagingFmx\PagingFMX.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="PagingFMX:Make">
+        <MSBuild Projects="..\Samples\PagingFmx\PagingFMX.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Paging_MVVM_VCL">
+        <MSBuild Projects="..\Samples\Paging_MVVM\VCL\Paging_MVVM_VCL.dproj"/>
+    </Target>
+    <Target Name="Paging_MVVM_VCL:Clean">
+        <MSBuild Projects="..\Samples\Paging_MVVM\VCL\Paging_MVVM_VCL.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Paging_MVVM_VCL:Make">
+        <MSBuild Projects="..\Samples\Paging_MVVM\VCL\Paging_MVVM_VCL.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Paging_MVVM_FMX">
+        <MSBuild Projects="..\Samples\Paging_MVVM\FMX\Paging_MVVM_FMX.dproj"/>
+    </Target>
+    <Target Name="Paging_MVVM_FMX:Clean">
+        <MSBuild Projects="..\Samples\Paging_MVVM\FMX\Paging_MVVM_FMX.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Paging_MVVM_FMX:Make">
+        <MSBuild Projects="..\Samples\Paging_MVVM\FMX\Paging_MVVM_FMX.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="PizzaOrders_10_vcl">
+        <MSBuild Projects="..\NewPizzaOrder\10\vcl\PizzaOrders_10_vcl.dproj"/>
+    </Target>
+    <Target Name="PizzaOrders_10_vcl:Clean">
+        <MSBuild Projects="..\NewPizzaOrder\10\vcl\PizzaOrders_10_vcl.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="PizzaOrders_10_vcl:Make">
+        <MSBuild Projects="..\NewPizzaOrder\10\vcl\PizzaOrders_10_vcl.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="PizzaOrders_10_fmx">
+        <MSBuild Projects="..\NewPizzaOrder\10\fmx\PizzaOrders_10_fmx.dproj"/>
+    </Target>
+    <Target Name="PizzaOrders_10_fmx:Clean">
+        <MSBuild Projects="..\NewPizzaOrder\10\fmx\PizzaOrders_10_fmx.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="PizzaOrders_10_fmx:Make">
+        <MSBuild Projects="..\NewPizzaOrder\10\fmx\PizzaOrders_10_fmx.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="PizzaOrders_10_mvvm_vcl">
+        <MSBuild Projects="..\NewPizzaOrder\10\mvvm\vcl\PizzaOrders_10_mvvm_vcl.dproj"/>
+    </Target>
+    <Target Name="PizzaOrders_10_mvvm_vcl:Clean">
+        <MSBuild Projects="..\NewPizzaOrder\10\mvvm\vcl\PizzaOrders_10_mvvm_vcl.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="PizzaOrders_10_mvvm_vcl:Make">
+        <MSBuild Projects="..\NewPizzaOrder\10\mvvm\vcl\PizzaOrders_10_mvvm_vcl.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="dmvcServerTest">
+        <MSBuild Projects="..\NewPizzaOrder\DMVC\server\dmvcServerTest.dproj"/>
+    </Target>
+    <Target Name="dmvcServerTest:Clean">
+        <MSBuild Projects="..\NewPizzaOrder\DMVC\server\dmvcServerTest.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="dmvcServerTest:Make">
+        <MSBuild Projects="..\NewPizzaOrder\DMVC\server\dmvcServerTest.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="PizzaOrderByClass_mvvm_fmx">
+        <MSBuild Projects="..\New_Samples\pizza order by classes\mvvm fmx project\PizzaOrderByClass_mvvm_fmx.dproj"/>
+    </Target>
+    <Target Name="PizzaOrderByClass_mvvm_fmx:Clean">
+        <MSBuild Projects="..\New_Samples\pizza order by classes\mvvm fmx project\PizzaOrderByClass_mvvm_fmx.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="PizzaOrderByClass_mvvm_fmx:Make">
+        <MSBuild Projects="..\New_Samples\pizza order by classes\mvvm fmx project\PizzaOrderByClass_mvvm_fmx.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="PizzAmore_10_LessAttr_Class_vcl_desktop">
+        <MSBuild Projects="PizzAmore_10_LessAttr_Class\vcl\PizzAmore_10_LessAttr_Class_vcl_desktop.dproj"/>
+    </Target>
+    <Target Name="PizzAmore_10_LessAttr_Class_vcl_desktop:Clean">
+        <MSBuild Projects="PizzAmore_10_LessAttr_Class\vcl\PizzAmore_10_LessAttr_Class_vcl_desktop.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="PizzAmore_10_LessAttr_Class_vcl_desktop:Make">
+        <MSBuild Projects="PizzAmore_10_LessAttr_Class\vcl\PizzAmore_10_LessAttr_Class_vcl_desktop.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="PizzAmore_10_LessAttr_Class_fmx_tablet">
+        <MSBuild Projects="PizzAmore_10_LessAttr_Class\fmx\PizzAmore_10_LessAttr_Class_fmx_tablet.dproj"/>
+    </Target>
+    <Target Name="PizzAmore_10_LessAttr_Class_fmx_tablet:Clean">
+        <MSBuild Projects="PizzAmore_10_LessAttr_Class\fmx\PizzAmore_10_LessAttr_Class_fmx_tablet.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="PizzAmore_10_LessAttr_Class_fmx_tablet:Make">
+        <MSBuild Projects="PizzAmore_10_LessAttr_Class\fmx\PizzAmore_10_LessAttr_Class_fmx_tablet.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="PizzAmore_20_MoreAttr_Class_vcl_desktop">
+        <MSBuild Projects="PizzAmore_20_MoreAttr_Class\vcl\PizzAmore_20_MoreAttr_Class_vcl_desktop.dproj"/>
+    </Target>
+    <Target Name="PizzAmore_20_MoreAttr_Class_vcl_desktop:Clean">
+        <MSBuild Projects="PizzAmore_20_MoreAttr_Class\vcl\PizzAmore_20_MoreAttr_Class_vcl_desktop.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="PizzAmore_20_MoreAttr_Class_vcl_desktop:Make">
+        <MSBuild Projects="PizzAmore_20_MoreAttr_Class\vcl\PizzAmore_20_MoreAttr_Class_vcl_desktop.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="PizzAmore_20_MoreAttr_Class_vcl_dmvc_server">
+        <MSBuild Projects="PizzAmore_20_MoreAttr_Class\dmvc_server\PizzAmore_20_MoreAttr_Class_vcl_dmvc_server.dproj"/>
+    </Target>
+    <Target Name="PizzAmore_20_MoreAttr_Class_vcl_dmvc_server:Clean">
+        <MSBuild Projects="PizzAmore_20_MoreAttr_Class\dmvc_server\PizzAmore_20_MoreAttr_Class_vcl_dmvc_server.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="PizzAmore_20_MoreAttr_Class_vcl_dmvc_server:Make">
+        <MSBuild Projects="PizzAmore_20_MoreAttr_Class\dmvc_server\PizzAmore_20_MoreAttr_Class_vcl_dmvc_server.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="PizzAmore_30_LessAttr_Intf_vcl_desktop">
+        <MSBuild Projects="PizzAmore_30_LessAttr_Intf\vcl\PizzAmore_30_LessAttr_Intf_vcl_desktop.dproj"/>
+    </Target>
+    <Target Name="PizzAmore_30_LessAttr_Intf_vcl_desktop:Clean">
+        <MSBuild Projects="PizzAmore_30_LessAttr_Intf\vcl\PizzAmore_30_LessAttr_Intf_vcl_desktop.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="PizzAmore_30_LessAttr_Intf_vcl_desktop:Make">
+        <MSBuild Projects="PizzAmore_30_LessAttr_Intf\vcl\PizzAmore_30_LessAttr_Intf_vcl_desktop.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="PizzAmore_30_LessAttr_Intf_mvvm_vcl_desktop">
+        <MSBuild Projects="PizzAmore_30_LessAttr_Intf\mvvm_vcl\PizzAmore_30_LessAttr_Intf_mvvm_vcl_desktop.dproj"/>
+    </Target>
+    <Target Name="PizzAmore_30_LessAttr_Intf_mvvm_vcl_desktop:Clean">
+        <MSBuild Projects="PizzAmore_30_LessAttr_Intf\mvvm_vcl\PizzAmore_30_LessAttr_Intf_mvvm_vcl_desktop.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="PizzAmore_30_LessAttr_Intf_mvvm_vcl_desktop:Make">
+        <MSBuild Projects="PizzAmore_30_LessAttr_Intf\mvvm_vcl\PizzAmore_30_LessAttr_Intf_mvvm_vcl_desktop.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="PizzAmore_30_LessAttr_Intf_mvvm_fmx_mobile">
+        <MSBuild Projects="PizzAmore_30_LessAttr_Intf\mvvm_fmx\PizzAmore_30_LessAttr_Intf_mvvm_fmx_mobile.dproj"/>
+    </Target>
+    <Target Name="PizzAmore_30_LessAttr_Intf_mvvm_fmx_mobile:Clean">
+        <MSBuild Projects="PizzAmore_30_LessAttr_Intf\mvvm_fmx\PizzAmore_30_LessAttr_Intf_mvvm_fmx_mobile.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="PizzAmore_30_LessAttr_Intf_mvvm_fmx_mobile:Make">
+        <MSBuild Projects="PizzAmore_30_LessAttr_Intf\mvvm_fmx\PizzAmore_30_LessAttr_Intf_mvvm_fmx_mobile.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="PizzAmore_40_LessAttr_Intf_mvvm_fmx_mobile_microviews">
+        <MSBuild Projects="PizzAmore_40_LessAttr_Intf_microviews\mvvm_fmx\PizzAmore_40_LessAttr_Intf_mvvm_fmx_mobile_microviews.dproj"/>
+    </Target>
+    <Target Name="PizzAmore_40_LessAttr_Intf_mvvm_fmx_mobile_microviews:Clean">
+        <MSBuild Projects="PizzAmore_40_LessAttr_Intf_microviews\mvvm_fmx\PizzAmore_40_LessAttr_Intf_mvvm_fmx_mobile_microviews.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="PizzAmore_40_LessAttr_Intf_mvvm_fmx_mobile_microviews:Make">
+        <MSBuild Projects="PizzAmore_40_LessAttr_Intf_microviews\mvvm_fmx\PizzAmore_40_LessAttr_Intf_mvvm_fmx_mobile_microviews.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="iORM_Project_DesignTime;iORM_Project;PagingVCL;PagingFMX;Paging_MVVM_VCL;Paging_MVVM_FMX;PizzaOrders_10_vcl;PizzaOrders_10_fmx;PizzaOrders_10_mvvm_vcl;dmvcServerTest;PizzaOrderByClass_mvvm_fmx;PizzAmore_10_LessAttr_Class_vcl_desktop;PizzAmore_10_LessAttr_Class_fmx_tablet;PizzAmore_20_MoreAttr_Class_vcl_desktop;PizzAmore_20_MoreAttr_Class_vcl_dmvc_server;PizzAmore_30_LessAttr_Intf_vcl_desktop;PizzAmore_30_LessAttr_Intf_mvvm_vcl_desktop;PizzAmore_30_LessAttr_Intf_mvvm_fmx_mobile;PizzAmore_40_LessAttr_Intf_mvvm_fmx_mobile_microviews"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="iORM_Project_DesignTime:Clean;iORM_Project:Clean;PagingVCL:Clean;PagingFMX:Clean;Paging_MVVM_VCL:Clean;Paging_MVVM_FMX:Clean;PizzaOrders_10_vcl:Clean;PizzaOrders_10_fmx:Clean;PizzaOrders_10_mvvm_vcl:Clean;dmvcServerTest:Clean;PizzaOrderByClass_mvvm_fmx:Clean;PizzAmore_10_LessAttr_Class_vcl_desktop:Clean;PizzAmore_10_LessAttr_Class_fmx_tablet:Clean;PizzAmore_20_MoreAttr_Class_vcl_desktop:Clean;PizzAmore_20_MoreAttr_Class_vcl_dmvc_server:Clean;PizzAmore_30_LessAttr_Intf_vcl_desktop:Clean;PizzAmore_30_LessAttr_Intf_mvvm_vcl_desktop:Clean;PizzAmore_30_LessAttr_Intf_mvvm_fmx_mobile:Clean;PizzAmore_40_LessAttr_Intf_mvvm_fmx_mobile_microviews:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="iORM_Project_DesignTime:Make;iORM_Project:Make;PagingVCL:Make;PagingFMX:Make;Paging_MVVM_VCL:Make;Paging_MVVM_FMX:Make;PizzaOrders_10_vcl:Make;PizzaOrders_10_fmx:Make;PizzaOrders_10_mvvm_vcl:Make;dmvcServerTest:Make;PizzaOrderByClass_mvvm_fmx:Make;PizzAmore_10_LessAttr_Class_vcl_desktop:Make;PizzAmore_10_LessAttr_Class_fmx_tablet:Make;PizzAmore_20_MoreAttr_Class_vcl_desktop:Make;PizzAmore_20_MoreAttr_Class_vcl_dmvc_server:Make;PizzAmore_30_LessAttr_Intf_vcl_desktop:Make;PizzAmore_30_LessAttr_Intf_mvvm_vcl_desktop:Make;PizzAmore_30_LessAttr_Intf_mvvm_fmx_mobile:Make;PizzAmore_40_LessAttr_Intf_mvvm_fmx_mobile_microviews:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
